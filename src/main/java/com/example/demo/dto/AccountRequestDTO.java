@@ -1,5 +1,11 @@
 package com.example.demo.dto;
 
-public class AccountRequestDTO {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data @NoArgsConstructor @AllArgsConstructor 
+public class AccountRequestDTO {
+    private double balance;
+    private String type;
 }
