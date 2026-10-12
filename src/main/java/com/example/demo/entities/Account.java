@@ -22,6 +22,9 @@ public class Account {
     private String currency;
     @Enumerated (EnumType.STRING)
     private AccountType accountType;
-    
 
+    @jakarta.persistence.Transient
+    public String getType() {
+        return accountType != null ? accountType.name() : null;
+    }
 }
